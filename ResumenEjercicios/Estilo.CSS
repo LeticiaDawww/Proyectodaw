@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+#tabs-2 {background-color: #E6E6FA;}
+
+#tabs-1 {background-color:  #E6E6FA;}
+
+#Tabs1 {background-color:  #E6E6FA;}
+
+#Tabs1 ul li{
+    background-color: #E6E6FA;
+    color: #000000;
+}
+
+#Tabs1 ul{background-color:  #E6E6FA;}
+
+body{
+	background-color: #E6E6FA;
+}
+
+
+#contenedor{
+	display: flex;
+    justify-content: space-between;
+	 	
+}
+
+#contenedor2{
+	display: flex;
+    justify-content: space-between;
+}
+
+.Ejer1{
+	float: left;
+	padding: 50px;
+	margin-left: 10%;
+	margin-top: 20%;
+}
+
+.Ejer2{
+	float: left;
+	padding: 50px;
+	margin-top: 20%;
+}
+
+.Ejer3{
+	float: left;
+	padding: 50px;
+	margin-top: 20%;
+}
+
+.Ejer4{
+	float: left;
+	padding: 50px;
+	margin-top: 20%;
+}
+
+.titulo{
+	text-decoration: underline;
+	text-align: left;
+}
+
+.def{
+	text-align: left;
+}
+
+.logoinsta{padding-left: 8pt;
+	
+}
+footer{
+	background-color: rgb(230,230,230);
+}
+
+footer p{
+	margin: 0;
+	padding: 12px;
+}
+
+footer .contenedor{
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	background-color: azure;
+}
+
+header .logo{
+	margin: 0;
+	padding: 25px 30px; /*el primer valor es paddin de arriba y abajo, y el segunndo padding a los lados*/
+	font-weight: bold;
+	color: black;
+	font-size: ;
+}
+
+header .contenedor{
+	display: flex;
+	flex-direction: column; /*los elementos se ordenan en columna*/
+	align-items: center;
+	
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a{
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover{
+	color: blue;
+}
+
+
+
+
+
+
+

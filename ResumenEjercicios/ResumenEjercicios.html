@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<link href="Estilo.CSS" rel="stylesheet" type="text/css">
+</head>
+	<style>/* funcionamiento básico del sistema de pestañas */
+.tab-content {
+  display: none;
+}
+
+.tab:target .tab-content, .tab:last-of-type .tab-content {
+  display: block;
+}
+
+.tab:target ~ .tab:last-of-type .tab-content {
+  display: none;
+}
+/* parámetros para configurar las pestañas */
+:root {
+  --tabs-border-color: #ABCDEF;
+  --tabs-border-size: 3px;
+  --tabs-text-color: black;
+  --tabs-dark-color: #E6E6FA;
+  --tabs-lite-color: #E6E6FA;
+  --tabs-width: 200px;
+  --tabs-height: 40px;
+}
+
+/* aspecto básico */
+body {
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+h2, p {
+  margin: 0;
+	color:black;
+} 
+a {
+  color: inherit;
+  text-decoration: none;
+	
+} 
+.tabs * {
+  box-sizing: border-box;
+	
+}	
+/* esto es para posicionar las pestañas correctamente */
+.tab-container {
+  position: relative;
+  padding-top: var(--tabs-height); /* en esta zona colocaremos las pestañas */
+	
+} 
+#tab1>a { --tabs-position: 0;
+    color: #000000;
+	
+}
+#tab2>a { --tabs-position: 1;
+    color: #000000;
+	
+}
+
+#tab4>a { --tabs-position: 3; }
+#tab5>a { --tabs-position: 4; }
+#tab6>a { --tabs-position: 5; }
+#tab7>a { --tabs-position: 6; }
+#tab8>a { --tabs-position: 7; }
+#tab9>a { --tabs-position: 8; }
+.tab>a {
+  text-align: center;
+  position: absolute;
+  width: calc(var(--tabs-width));
+  height: calc(var(--tabs-height) + var(--tabs-border-size)); 
+  top: 0;
+  left: calc(var(--tabs-width) * var(--tabs-position)); /* posición de cada pestaña */
+}
+/* más aspecto */
+.tabs { 
+  padding: 10px;
+  color: #E6E6FA;
+}
+.tab-content {
+  background-color: #E6E6FA;
+  padding: 20px;
+  border: var(--tabs-border-size) solid var(--tabs-border-color);
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  z-index: 100;
+	height: 900px;
+}
+.tab>a {
+  background-color: var(--tabs-dark-color); 
+  padding: 10px;
+  border: #E6E6FA;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 0;
+}
+.tab:target>a, .tab:last-of-type>a {
+  background-color:#E6E6FA; 
+  z-index: 200;
+}
+.tab:target ~ .tab:last-of-type>a {
+  background-color: #E6E6FA;
+  z-index: 0; 
+}		
+	</style>
+<body>
+	
+	<header>
+	    <div class="contenedor">
+		    <p class="logo"><a href="file:///C|/ProyectoLM3/index.html">GameGuide</a></p>
+		      <nav>
+				  <a href="file:///C:/ProyectoLM3/index.html">Inicio</a>
+				  <a href="ResumenEjercicios.html">Ejercicios</a>
+				  <a href="file:///C:/ProyectoLM3/formulario/formulario.html">Registrate</a>
+			</nav>
+		</div>
+	</header>
+	
+<div class="tabs">
+  <div class="tab-container">
+    
+    <div id="tab2" class="tab">
+      <a href="#tab2">Ejercicios con CSS</a>
+      <div class="tab-content">
+	    <div class="contenedor2">
+		    <div class="Ejer1"><a href="Ejercicio7CSS/Ejercicio7.html"><img src="imagenes/Ejercicio7estilos.png" width="150" height="150" alt=""/></a>
+			    <p class="titulo">Ejercicio 7 aplicar estilos</p>
+			  <p class="def">Página con diferentes estilos CSS</p>
+			  </div>
+		    <div class="Ejer2"><a href="EjercicioExtra/Ejercicio5Extra.html"><img src="imagenes/ejercicioextra.png" width="150" height="150" alt=""/></a>
+			   <p class="titulo">Ejercicio extra estilos</p>
+			  <p class="def">Página imagenes CSS</p>
+		    </div>
+			  <div class="Ejer3"><a href="Ejercicio9css/ejercicio9estilos.html"><img src="imagenes/ejercicio9estilos.png" width="150" height="150" alt=""/></a>
+				  <p class="titulo">Ejercicio 9 estilos</p>
+			  <p class="def">Página con estilos CSS</p>
+		    </div>
+			<div class="Ejer4"><a href="ejercicio27css/Ejercicio27.html"><img src="imagenes/Ejercicio27estilos.png" width="150" height="150" alt=""/></a>
+				 <p class="titulo">Ejercicio 27 css</p>
+			  <p class="def">Página con 4 bloques, estilos CSS</p>
+		  </div>
+			  
+			  
+		  
+		  
+	    </div>
+      </div>
+    </div> 
+    <div id="tab1" class="tab">
+      <a href="#tab1">Ejercicios sin CSS</a>
+      <div class="tab-content">
+		  <div class="contenedor">
+		  <div class="Ejer1"><a href="Ejercicio6/Ejercicio6.html"><img src="../../Users/leti_/OneDrive/Documentos/Proyecto3evaluacionLM/Ejercicio6html.jpg" width="150" height="150" alt=""></a>
+           <p class="titulo">Ejercicio 6 con listas anidadas</p>
+			  <p class="def">Página con listas anidadas</p></div>
+		  <div class="Ejer2"><a href="Ejercicio13/ejercicio13.html"><img src="../../Users/leti_/OneDrive/Documentos/Proyecto3evaluacionLM/ejercicio13tablashtml.jpg" width="150" height="150" alt=""></a>
+		   <p class="titulo">Ejercicio 13 tablas</p>
+			  <p class="def">Página con tabla Reino Unido</p></div>
+		  <div class="Ejer3"><a href="Ejercicio16/Ejercicio16.html"><img src="../../Users/leti_/OneDrive/Documentos/Proyecto3evaluacionLM/ejerciciopartidospoliticos.png" width="150" height="150" alt=""></a>
+		   <p class="titulo">Ejercicio 16 partidos politicos</p>
+			  <p class="def">Página con los partidos politicos</p>
+			  <p class="def">con enlaces</p></div>
+		  <div class="Ejer4"><a href="Ejercicio17/Ejercicio17.html"><img src="imagenes/ejercicio17Formulario.png" width="150" height="150" alt=""></a>
+			  <p class="titulo">Ejercicio 17 Formulario</p>
+			  <p class="def">Página con un formulario</p>
+			  </div>
+		  </div>
+      </div>
+		<audio controls>
+		<source src="Audio/10 Shop.mp3" type="audio/mp3">
+	</audio>
+    </div> 
+  </div>
+</div>
+	<footer>
+	  <div class="contenedor">
+			<p>SIGUENOS</p>
+			<div class="logoface"><img src="imagenes/logofb.jpg" alt="" width="30" height="30" usemap="#Map"/>
+              <map name="Map">
+                <area shape="rect" coords="3,7,219,220" href="https://www.facebook.com/?locale=es_ES" target="_blank">
+              </map>
+		    </div>
+		    <div class="logoinsta"><img src="imagenes/instagramlogo.png" alt="" width="60" height="30" usemap="#Map2"/>
+			  <map name="Map2">
+		        <area shape="rect" coords="18,6,44,27" href="https://www.instagram.com/accounts/emailsignup/" target="_blank">
+			  </map>
+        </div>
+			  <div class="logotwi">
+			   <img src="imagenes/Symbol-Twitter.png" alt="" width="50" height="30" usemap="#Map3"/>
+               <map name="Map3">
+                 <area shape="rect" coords="13,6,38,47" href="https://twitter.com/" target="_bank">
+               </map>			
+	         </div>
+		</div>
+	</footer>
+	
+</body>
+</html>
