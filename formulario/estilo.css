@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.FormularioRegistro {
+	width: 400px;
+	background: #33ccee;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.FormularioRegistro h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.control {
+	width: 100%;
+	background: #b5ebf7;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1;
+    font-family: 'calibri';
+	font-size: 18px;
+}
+
+.FormularioRegistro p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.FormularioRegistro a {
+	color:#324DD2;
+	text-decoration: underline;
+}
+
+.FormularioRegistro .boton{
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.FormularioRegistro h1{
+	text-align: center;
+}
+
+
+footer{
+	background-color: rgb(230,230,230);
+}
+
+footer p{
+	margin: 0;
+	padding: 12px;
+}
+
+footer .contenedor{
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.logoinsta{padding-left: 8pt;
+	
+}
+
+
+header{
+	background-color: azure;
+}
+
+header .logo{
+	margin: 0;
+	padding: 25px 30px; /*el primer valor es paddin de arriba y abajo, y el segunndo padding a los lados*/
+	font-weight: bold;
+	color: black;
+	font-size: ;
+}
+
+header .contenedor{
+	display: flex;
+	flex-direction: column; /*los elementos se ordenan en columna*/
+	align-items: center;
+	
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a{
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover{
+	color: blue;
+}
+
+
+body{
+	background-image: url("imagenes/franquicias-mas-duraderas.webp");
+	background-repeat: no-repeat;
+	background-size: cover; /*para que la imagen ocupe todo el espacio disponible*/
+	background-position: center center; /*para que la imagen aparezca siempre centrada*/
+}
+	
